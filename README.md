@@ -1,15 +1,15 @@
 
-#To Build this project for Nucleo_F746zg
+# To Build this project for Nucleo_F746zg
 ```
 mbed-cli compile -j0 -t GCC_ARM -m nucleo_f746zg
 ```
 
-#To upload to board
+# To upload to board
 ```
 cp ./BUILD/NUCLEO_F746ZG/GCC_ARM/mbed-os-example-blinky.bin /media/$(whoami)/NODE_F746ZG/
 ```
 
-#If the build fails because it couldn't find the ARM compiler
+# If the build fails because it couldn't find the ARM compiler
 
 ```
 sudo apt install gcc-arm-embedded 
