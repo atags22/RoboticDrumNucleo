@@ -12,6 +12,7 @@ cp ./BUILD/NUCLEO_F746ZG/GCC_ARM/mbed-os-example-blinky.bin /media/$(whoami)/NOD
 # If the build fails because it couldn't find the ARM compiler
 
 ```
+sudo add-apt-repository ppa:team-gcc-arm-embedded/ppa
 sudo apt install gcc-arm-embedded 
 mbed config -G GCC_ARM_PATH "arm-none-eabi-gcc"
 ```
