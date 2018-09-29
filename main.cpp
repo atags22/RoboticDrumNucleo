@@ -19,7 +19,9 @@ int main() {
   thread.start(led2_thread);
 
   while (true) {
-    led1 = !led1;
+    led1 = false;
+    Thread::wait(40);
+    led1 = true;
     Thread::wait(500);
   }
 }
